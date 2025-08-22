@@ -1,0 +1,55 @@
+@media (min-width: 640px) {
+    /* Header and Navigation for larger screens */
+    #menu-button {
+        display: none; /* Hide hamburger menu */
+    }
+
+    #main-nav {
+        display: block; /* Always show nav */
+        background: none;
+    }
+
+    #main-nav ul {
+        display: flex;
+        justify-content: flex-end; /* Align nav items to the right */
+    }
+
+    #main-nav li a {
+        border: none;
+        padding: 0.5rem 1rem;
+        transition: background-color 0.3s;
+        border-radius: 5px;
+        margin: 0 0.25rem;
+    }
+    
+    header {
+        /* Re-align header content for horizontal nav */
+        justify-content: space-between;
+    }
+
+    .logo {
+        flex-grow: 1;
+    }
+
+    /* Main Content Grid */
+    .grid-container {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 1.5rem;
+    }
+
+    .about-me {
+        grid-column: 1 / 2;
+    }
+
+    .student-photo {
+        grid-column: 2 / 3;
+    }
+    
+    /* Course Cards Grid */
+    #course-cards-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1.5rem;
+    }
+}
