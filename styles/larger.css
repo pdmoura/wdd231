@@ -1,16 +1,17 @@
 /* Larger screen styles */
 @media (min-width: 768px) {
+
     /* Header adjustments */
     #menu-button {
         display: none;
     }
-    
+
     /* Navigation for larger screens */
     nav {
         display: block !important;
         background-color: #444;
     }
-    
+
     nav ul {
         flex-direction: row;
         justify-content: center;
@@ -18,35 +19,34 @@
         margin: 0 auto;
         gap: 50px;
     }
-    
+
     nav li {
         border-bottom: none;
-        /* border-right: 1px solid #555; */
     }
-    
+
     nav li:last-child {
         border-right: none;
     }
-    
+
     nav a {
         padding: 16px 32px;
     }
-    
+
     nav a:hover,
     nav a.current {
         background-color: #666;
     }
-    
+
     /* Main content adjustments */
     main {
         padding: 32px 24px;
     }
-    
+
     h1 {
         font-size: 2.5rem;
         margin-bottom: 40px;
     }
-    
+
     /* Two-column layout for about and photo sections */
     .about-photo-container {
         display: grid;
@@ -54,95 +54,95 @@
         gap: 24px;
         margin-bottom: 32px;
     }
-    
+
+    .main-content-grid {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 24px;
+        margin-bottom: 32px;
+    }
+
+    /* Custom layout for about and photo sections on larger screens */
+    .about-section,
+    .photo-section {
+        margin-bottom: 24px;
+    }
+
+
     /* Course cards grid */
     .courses-container {
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         gap: 20px;
         padding: 24px;
     }
-    
+
     .course-card {
-        padding: 20px;
+        padding: 10px;
     }
-    
+
     .course-card h3 {
         font-size: 1.125rem;
     }
-    
+
     /* Filter buttons */
     .filter-buttons {
         padding: 20px 24px;
     }
-    
+
     .filter-btn {
         padding: 10px 20px;
         font-size: 1rem;
     }
-    
-    /* Credits display */
+
+
     .credits-display {
         padding: 20px 24px;
         font-size: 1.125rem;
     }
-    
+
     /* Footer adjustments */
     footer {
         padding: 32px 24px;
     }
-    
+
     .social-links {
         margin-bottom: 20px;
     }
-    
+
     footer p {
         font-size: 1rem;
     }
 }
 
 @media (min-width: 1024px) {
+
     /* Larger desktop adjustments */
     main {
         padding: 40px 32px;
     }
-    
+
     h1 {
         font-size: 3rem;
         margin-bottom: 48px;
     }
-    
+
     .courses-container {
         grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
         gap: 24px;
         padding: 32px;
     }
-    
+
     .course-card {
-        padding: 24px;
+        padding: 10px;
     }
-    
+
     /* Photo section responsive sizing */
     .student-photo {
         max-width: 400px;
     }
-    
+
     /* Better spacing for sections */
     section {
         margin-bottom: 40px;
-    }
-}
-
-/* Custom layout for about and photo sections on larger screens */
-@media (min-width: 768px) {
-    .about-section,
-    .photo-section {
-        margin-bottom: 24px;
-    }
-    
-    .main-content-grid {
-        display: grid;
-        grid-template-columns: 2fr 1fr;
-        gap: 24px;
-        margin-bottom: 32px;
     }
 }

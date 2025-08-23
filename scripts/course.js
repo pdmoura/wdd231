@@ -1,4 +1,4 @@
-// Course management and filtering functionality
+// Course data
 const courses = [
     {
         subject: 'CSE',
@@ -80,23 +80,30 @@ const courses = [
     }
 ];
 
+// Course management class
 class CourseManager {
     constructor() {
+        // Page elements
         this.coursesContainer = document.getElementById('coursesContainer');
         this.totalCreditsElement = document.getElementById('totalCredits');
         this.filterButtons = document.querySelectorAll('.filter-btn');
-        this.currentFilter = 'all';
-        
+
+        // Modal elements
+        this.modal = document.getElementById('courseModal');
+        this.modalBody = document.getElementById('modalBody');
+        this.modalCloseBtn = this.modal.querySelector('.modal-close');
+
         this.init();
     }
-    
+
     init() {
         this.setupEventListeners();
         this.displayCourses(courses);
         this.updateCredits(courses);
     }
-    
+
     setupEventListeners() {
+        // Listener for filter buttons
         this.filterButtons.forEach(button => {
             button.addEventListener('click', (e) => {
                 const filter = e.target.getAttribute('data-filter');
@@ -104,69 +111,110 @@ class CourseManager {
                 this.filterCourses(filter);
             });
         });
+
+        // New listener on the container to open the modal
+        this.coursesContainer.addEventListener('click', (e) => {
+            const card = e.target.closest('.course-card');
+            if (card) {
+                // Find the course data using the ID from the card's data attribute
+                const courseId = parseInt(card.dataset.courseId);
+                const courseData = courses.find(c => c.number === courseId);
+                if (courseData) {
+                    this.openModal(courseData);
+                }
+            }
+        });
+
+        // Listeners to close the modal
+        this.modalCloseBtn.addEventListener('click', () => this.closeModal());
+        this.modal.addEventListener('click', (e) => {
+            // Close if the user clicks on the overlay background, but not the content itself
+            if (e.target === this.modal) {
+                this.closeModal();
+            }
+        });
     }
-    
+
+    openModal(course) {
+        // Create the HTML for the technology tags
+        const techTags = course.technology.map(tech =>
+            `<span class="tech-tag">${tech}</span>`
+        ).join('');
+
+        // Populate the modal's body with the course details
+        this.modalBody.innerHTML = `
+            <h3>${course.subject} ${course.number}</h3>
+            <div class="course-info"><strong>Credits:</strong> ${course.credits}</div>
+            <div class="course-info"><strong>Certificate:</strong> ${course.certificate}</div>
+            <div class="course-description">${course.description}</div>
+            <div class="course-tech">${techTags}</div>
+        `;
+        // Show the modal by adding the 'active' class
+        this.modal.classList.add('active');
+    }
+
+    closeModal() {
+        // Hide the modal by removing the 'active' class
+        this.modal.classList.remove('active');
+    }
+
+    createCourseCard(course) {
+        // The card is now a simple, clickable element
+        const card = document.createElement('div');
+        card.className = `course-card`;
+
+        // Use a data attribute to uniquely identify the course
+        card.dataset.courseId = course.number;
+
+        if (course.completed) {
+            card.classList.add('completed');
+        }
+
+        // The card only shows the course title to keep it clean
+        card.innerHTML = `<h3>${course.subject} ${course.number}</h3>`;
+        card.innerHTML = `
+        <h3>${course.subject} ${course.number} <span class="card-icon">+</span></h3>`;
+        return card;
+    }
+
     setActiveFilter(activeButton) {
         this.filterButtons.forEach(button => {
             button.classList.remove('active');
         });
         activeButton.classList.add('active');
     }
-    
+
     filterCourses(filter) {
-        this.currentFilter = filter;
         let filteredCourses;
-        
         if (filter === 'all') {
             filteredCourses = courses;
         } else {
             filteredCourses = courses.filter(course => course.subject === filter);
         }
-        
         this.displayCourses(filteredCourses);
         this.updateCredits(filteredCourses);
     }
-    
+
     displayCourses(coursesToDisplay) {
         this.coursesContainer.innerHTML = '';
-        
         coursesToDisplay.forEach(course => {
             const courseCard = this.createCourseCard(course);
             this.coursesContainer.appendChild(courseCard);
         });
     }
-    
-    createCourseCard(course) {
-        const card = document.createElement('div');
-        card.className = `course-card ${course.completed ? 'completed' : ''}`;
-        
-        const techTags = course.technology.map(tech => 
-            `<span class="tech-tag">${tech}</span>`
-        ).join('');
-        
-        card.innerHTML = `
-            <h3>${course.subject} ${course.number}</h3>
-            <div class="course-info">Credits: ${course.credits}</div>
-            <div class="course-info">Certificate: ${course.certificate}</div>
-            <div class="course-description">${course.description}</div>
-            <div class="course-tech">${techTags}</div>
-        `;
-        
-        return card;
-    }
-    
+
     updateCredits(coursesToDisplay) {
         const totalCredits = coursesToDisplay.reduce((total, course) => {
             return total + course.credits;
         }, 0);
-        
+
         if (this.totalCreditsElement) {
             this.totalCreditsElement.textContent = totalCredits;
         }
     }
 }
 
-// Initialize course manager when DOM is loaded
+// Initialize the CourseManager class once the DOM is fully loaded
 document.addEventListener('DOMContentLoaded', () => {
     new CourseManager();
 });
