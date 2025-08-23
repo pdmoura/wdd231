@@ -26,7 +26,7 @@ header {
     justify-content: space-between;
     align-items: center;
     max-width: 1200px;
-    margin: 0 auto;
+    gap: 5px;
 }
 
 .logo-section {
@@ -87,18 +87,32 @@ nav li {
 }
 
 nav a {
-    text-align: center;
-    display: block;
     color: white;
     text-decoration: none;
     padding: 16px 24px;
     transition: background-color 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
 }
 
 nav a:hover,
 nav a.current {
-    background-color: #666;
+    background-color: #4D4D4D;
+
 }
+
+nav a.current::after {
+    content: url('/images/pin-icon.svg');
+    width: 32px;
+    height: auto;
+    display: inline-block;
+    vertical-align: middle;
+
+}
+
 
 /* Main content */
 main {
@@ -209,7 +223,7 @@ section {
 
 .course-card h3 {
     font-size: 1rem;
-    font-weight: 600;   
+    font-weight: 600;
     color: #333;
 }
 
@@ -256,7 +270,8 @@ section {
     font-size: 1.2rem;
     font-weight: bold;
     color: #555;
-    margin-top: -5px; /* Adjust as needed for vertical alignment */
+    margin-top: -5px;
+    /* Adjust as needed for vertical alignment */
 }
 
 
@@ -265,7 +280,8 @@ section {
 
 /* The dark background overlay, hidden by default */
 .modal-overlay {
-    display: none; /* Hidden by default */
+    display: none;
+    /* Hidden by default */
     position: fixed;
     top: 0;
     left: 0;
@@ -290,7 +306,7 @@ section {
     width: 90%;
     max-width: 600px;
     position: relative;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
     animation: fadeIn 0.3s ease-out;
 }
 
@@ -318,6 +334,7 @@ section {
         opacity: 0;
         transform: scale(0.95);
     }
+
     to {
         opacity: 1;
         transform: scale(1);
@@ -329,10 +346,12 @@ section {
     margin-top: 0;
     font-size: 1.5rem;
 }
+
 #modalBody .course-info,
 #modalBody .course-description {
     margin-bottom: 0.75rem;
 }
+
 #modalBody .course-tech {
     margin-top: 1rem;
     display: flex;

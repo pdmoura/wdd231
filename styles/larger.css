@@ -1,6 +1,10 @@
 /* Larger screen styles */
 @media (min-width: 768px) {
 
+    .site-name {
+        font-size: 2.2rem;
+    }
+
     /* Header adjustments */
     #menu-button {
         display: none;
@@ -14,14 +18,18 @@
 
     nav ul {
         flex-direction: row;
-        justify-content: center;
-        max-width: 1200px;
-        margin: 0 auto;
-        gap: 50px;
+        display: flex;
+        width: 100%;
+        margin: 0;
+        /* Adjusted from margin: 0 auto; */
     }
 
     nav li {
         border-bottom: none;
+        flex-grow: 1;
+        text-align: center;
+        border-right: 1px solid #555;
+        /* Adds a divider line */
     }
 
     nav li:last-child {
@@ -30,11 +38,13 @@
 
     nav a {
         padding: 16px 32px;
+        font-weight: 600;
+        font-size: 1rem;
     }
 
     nav a:hover,
     nav a.current {
-        background-color: #666;
+        background-color: #4D4D4D;
     }
 
     /* Main content adjustments */
@@ -117,6 +127,11 @@
 @media (min-width: 1024px) {
 
     /* Larger desktop adjustments */
+
+    .site-name {
+        font-size: 2.5rem;
+    }
+
     main {
         padding: 40px 32px;
     }
