@@ -1,7 +1,4 @@
-# WDD231
-
-## Badges
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)]([https://linkedin.com/in/pedroalves0])
+# WDD231 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)]([https://linkedin.com/in/pedroalves0]) 
 ![Status](https://img.shields.io/badge/Status-In_Progress-orange)
 
 ## About the project
