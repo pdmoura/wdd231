@@ -1,4 +1,13 @@
-# WDD231 ![GitHub Tag]() [![Linkedin Badge](https://img.shields.io/badge/-Pedro Alves-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/pedroalves0/))
+# WDD231 # My Awesome Project
+
+## Badges
+![Version](https://img.shields.io/badge/Version-1.0.0-blue)
+![License](https://img.shields.io/badge/License-MIT-green)
+![Status](https://img.shields.io/badge/Status-In_Progress-orange)
+
+## About the project
+This project does an amazing thing...
+
 
 This course builds on prior experience with Dynamic Web Fundamentals and programming. Students will focus on user experience, accessibility, compliance, performance optimization, and basic API usage. 
 
