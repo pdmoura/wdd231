@@ -1,4 +1,4 @@
-# WDD231 ![GitHub Tag](https://img.shields.io/github/v/tag/pdmoura/wdd231?color=%23a288de) [![Linkedin Badge](https://img.shields.io/badge/-Pedro Alves-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/pedroalves0/)](https://www.linkedin.com/in/pedroalves0/)
+# WDD231 ![GitHub Tag]() [![Linkedin Badge](https://img.shields.io/badge/-Pedro Alves-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/pedroalves0/))
 
 This course builds on prior experience with Dynamic Web Fundamentals and programming. Students will focus on user experience, accessibility, compliance, performance optimization, and basic API usage. 
 
