@@ -82,7 +82,7 @@ nav ul {
     flex-direction: column;
 }
 
-nav li {
+nav ul li{
     border-bottom: 1px solid #555;
 }
 
@@ -100,16 +100,14 @@ nav a {
 
 nav a:hover,
 nav a.current {
-    background-color: #333;
+    background-color: #555;
 
 }
 
 nav a.current::after {
     content: url('../images/pin-icon.svg');
     width: 32px;
-    height: auto;
-    display: inline-block;
-    vertical-align: middle;
+    height: 24px;
 
 }
 
