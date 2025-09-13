@@ -48,6 +48,7 @@ main {
     width: 90%;
     max-width: 1200px;
     padding: 10px;;
+    min-height: 75vh;
 }
 
 footer {
@@ -145,11 +146,7 @@ h1 {
     background-color: var(--color2);
 }
 
-/* Members div */
-#members {
-    /* Save vertical space so there is less layout shift in the page */
-    min-height: 60vh; 
-}
+
 
 /* Grid View Styles */
 .grid {
