@@ -184,6 +184,12 @@ input[type="radio"] {
     align-items: center;
 }
 
+.navigation .current {
+    background-color: var(--color3);
+    color: var(--color1);
+    font-weight: bold;
+}
+
 .web {
     display: flex;
 }

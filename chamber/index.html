@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Directory</title>
+    <meta name="description" content="WDD 231 - Web Frontend Development I - Pedro Alves - Chamber of Commerce: This page has the purpose to present the local companies, and to connect them.">
+    <meta name="author"  content="Pedro Alves">
+    <!--facebook meta-->
+    <meta property="og:title" content="Brasília Chamber of Commerce">
+    <meta property="og:description" content="Supporting local businesses and promoting economic growth in Brasília. Join us to network, find resources, and build a stronger community.">
+    <meta property="og:image" content="">
+    <meta property="og:url" content="">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:type" content="website">
+    <!---fonts-->
+    <!-- Preload the fonts -->
+    <link rel="preconnect" as="style" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700;900&display=swap">
+    <link rel="preconnect" as="style" href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap">
+
+    <!-- Load them asynchronously -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700;900&display=swap" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap" media="print" onload="this.media='all'">
+
+    <!-- Fallback if JS is disabled -->
+    <noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700;900&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap">
+    </noscript>
+    <!--css and js-->
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/base.js" defer></script>
+    <!--favicon-->
+    <link rel="icon" href="favicon-chamber.ico">
+</head>
+<body>
+    <header id="menu">
+        <img id="logo" src="images/logo-chamber.webp" alt="logo" loading="lazy" width="85" height="85">
+        <div id="humbutton">
+            <h1 id="title">Brasília DF - Chamber of Commerce</h1>
+            <a id="hidden-menu" href="#"></a>
+        </div>
+        <nav class="navigation">
+            <a class="button current" id="home" href="index.html">Home</a>
+            <a class="button" id="discover" href="discover.html">Discover</a>
+            <a class="button" id="Directory" href="directory.html">Directory</a>
+            <a class="button" id="join" href="join.html">Join</a>
+            <a class="button" id="about" href="#">About</a>
+            <a class="button" id="podcast" href="#">PodCast</a>
+            <a class="button" id="events" href="#">Events</a>
+        </nav>
+    </header>
+    <main>
+        <div class="navigation2">
+            <h1>Home</h1>
+            <div class="button2">
+                <a id="grid" href="#">Grid</a>
+                <a id="list" href="#">List</a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="block">
+            <div class="contact">
+                <p id="foot-name"><strong>Brasília DF - Chamber of Commerce</strong></p>
+                <p class="foot">R. Desembargador Dr. José Dilermando Meireles <br> Av. Central Norte s/n, Cidade Jardins</p>
+                <p class="foot">+55 (61) 3627-8953</p>
+            </div>
+            <div class="socialdiv">
+                <a id="git" href="https://github.com/pdmoura" target="_blank" aria-label="Github Profile"><img src="images/github.svg" class="social" alt="github icon" width="48" height="48"></a>
+                <a id="insta" href="https://www.instagram.com/pedrow_amoura/" target="_blank" aria-label="Instagram Profile"><img src="images/instagram-circle.svg" class="social" alt="instagram icon" width="48" height="48"></a>
+                <a id="face" href="https://m.facebook.com/" target="_blank" aria-label="Facebook Profile"><img src="images/facebook.svg" class="social" alt="facebook icon" width="48" height="48"></a>
+                <a id="face" href="https://linkedin.com/in/pedroalves0/" target="_blank" aria-label="LinkedIn Profile"><img src="images/linkedin-circle.svg" class="social" alt="linkedin icon" width="48" height="48"></a>
+            </div>
+            <div class="student">
+                <p class="foot">WDD231 BYU Project</p>
+                <p class="foot">&copy; <span id="year"></span> | Pedro Alves | Brazil</p>
+                <p class="foot">Last update:&nbsp;<span id="lastModified"></span></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+
