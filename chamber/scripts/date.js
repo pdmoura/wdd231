@@ -17,7 +17,7 @@ async function getMember() {
             div.classList.add('member');
 
             div.innerHTML = `
-            <img src="${member.image}" alt="${member.name}" width="170" height="170" loading="lazy" fetchpriority="high">
+            <img src="${member.image}" alt="${member.name}" width="170" height="170" loading="lazy">
             <h3 id="name">${member.name}</h3>
             <p><strong>Level:</strong> ${member.membershipLevel}</p>
             <p><strong>Phone:</strong> ${member.phone}</p>
