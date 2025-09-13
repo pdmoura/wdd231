@@ -18,7 +18,7 @@ async function getMember() {
 
             div.innerHTML = `
             <img src="${member.image}" alt="${member.name}" width="170" height="170" loading="lazy">
-            <h2 id="name">${member.name}</h2>
+            <h3 id="name">${member.name}</h3>
             <p><strong>Level:</strong> ${member.membershipLevel}</p>
             <p><strong>Phone:</strong> ${member.phone}</p>
             <p><strong>Adress:</strong> ${member.address}</p>
