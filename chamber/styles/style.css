@@ -230,7 +230,8 @@ input[type="radio"] {
 
 .foot {
     font-family: var(--roboto);
-    font-size: var(--b);
+    line-height: 1.5rem;
+    font-size: 0.85rem;
 }
 
 .contact {
@@ -488,8 +489,9 @@ input[type=submit] {
     box-shadow: 2px 2px 8px rgb(0, 0, 0);
 }
 
-#yellow {
+#foot-name {
     color: var(--color3);
+    padding-bottom: 5px;
 }
 
 #grid, #list {
