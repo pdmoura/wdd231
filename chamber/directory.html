@@ -15,12 +15,15 @@
     <meta property="og:type" content="website">
     <!-- normalize css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    
+
     <!---fonts-->
     <!-- Preload the fonts -->
     <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700;900&display=swap">
     <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap">
 
+    <!-- Preload logo image -->
+    <link rel="preload" fetchpriority="high" as="image" href="images/logo-chamber.webp">
+    
     <!-- Load them asynchronously -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700;900&display=swap" media="print" onload="this.media='all'">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap" media="print" onload="this.media='all'">
@@ -41,7 +44,7 @@
     <header>
         <div class="header-container">
         <div class="logo-section">
-            <img id="logo" src="images/logo-chamber.webp" alt="logo" loading="lazy" width="85" height="85">
+            <img id="logo" src="images/logo-chamber.webp" alt="logo" width="85" height="85" fetchpriority="high">
             <h2 id="title">Brasília DF - Chamber of Commerce</h2>
         </div>
         <div id="humbutton">
