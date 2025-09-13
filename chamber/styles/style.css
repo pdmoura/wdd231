@@ -9,7 +9,7 @@
     --color1: #2c3e50; /* Midnight Blue */
     --color2: #27ae60; /* Nephritis Green */
     --color3: #eaecee; /* Light Steel Gray */
-    --roboto: "Open Sans", sans-serif;
+    --roboto: "Roboto", sans-serif;
 }
 
 * {
@@ -244,7 +244,7 @@ footer .block {
 
 .foot {
     line-height: 1.5;
-    font-size: 0.9rem;
+    font-size: 0.94rem;
 }
 
 #foot-name {
