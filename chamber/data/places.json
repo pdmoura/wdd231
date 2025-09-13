@@ -1,0 +1,62 @@
+[
+    {
+        "name": "Shopping Sul",
+        "description": "A popular shopping center with various stores, a food court, and a movie theater.",
+        "address": "BR 040 - GLEBA F – PARQUE ESPLANADA III, Valparaíso de Goiás",
+        "imageUrl": "images/places/shopping-sul.webp"
+    },
+    {
+        "name": "Ecological Park of Valparaíso de Goiás",
+        "description": "A green space for nature lovers and outdoor activities, with a lake, trails, and playgrounds.",
+        "address": "Av. Planalto Central, Valparaíso de Goiás - GO",
+        "imageUrl": "images/places/ecological-park.webp"
+    },
+    {
+        "name": "Brasil Center Shopping",
+        "description": "Another commercial hub with numerous stores, a food court, and services.",
+        "address": "Av. Marginal – Parque Esplanada III, Valparaíso de Goiás - GO",
+        "imageUrl": "images/places/center-shopping.webp"
+    },
+    {
+        "name": "Saint Francis of Assisi Parish",
+        "description": "A local parish that is a point of interest for those interested in religious architecture and community history.",
+        "address": "Praça da Matriz, Qd. 07, Etapa A, Valparaizo I, CEP 72870-000, Valparaíso de Goiás – Goiás",
+        "imageUrl": "images/places/church.webp"
+    },
+    {
+        "name": "Saia Velha Waterfall",
+        "description": "A natural retreat for those looking to escape the city and enjoy a waterfall.",
+        "address": "Rodovia DF-495 Km 6, Área Rural, Cidade Ocidental-GO",
+        "imageUrl": "images/places/saia-velha.webp"
+    },
+    {
+        "name": "Pesque-Pague Bola Cheia",
+        "description": "A fishing spot that provides a relaxed and family-friendly atmosphere.",
+        "address": "Not specifically available online, but located in the Valparaíso de Goiás area.",
+        "imageUrl": "images/places/pesque-pague.webp"
+    },
+    {
+        "name": "Arts and Sports Center of Valparaíso de Goiás (CEU)",
+        "description": "A public space that promotes culture and sports, offering various workshops and events.",
+        "address": "Qd. 15, Área Especial A, Etapa C, Valparaizo I, Valparaíso de Goiás",
+        "imageUrl": "images/places/CEU.webp"
+    },
+    {
+        "name": "Cora Coralina Municipal Library",
+        "description": "A cultural hub with a large collection of books, a computer lab, and a study area.",
+        "address": "Edifício Torre Center, Quadra 03, Lote 02, Valparaizo II, Valparaíso de Goiás",
+        "imageUrl": "images/places/library.webp"
+    },
+    {
+        "name": "CTG Querência do Valparaíso",
+        "description": "A Gaucho Traditions Center that hosts regional events and parties, providing a glimpse into the culture.",
+        "address": "Avenida Senador Tancredo Neves, Valparaizo I, Valparaíso de Goiás",
+        "imageUrl": "images/places/CTG.webp"
+    },
+    {
+        "name": "Main Avenue and Gastronomy",
+        "description": "The city's main avenue is a central point for shopping, walking, and enjoying a variety of local restaurants and diners.",
+        "address": "Not a specific location, but refers to the main street in the city.",
+        "imageUrl": "images/places/AVE.webp"
+    }
+]
