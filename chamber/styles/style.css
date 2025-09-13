@@ -272,6 +272,11 @@ footer .block {
     opacity: 0.7; /* slightly fade icon */
 }
 
+.socialdiv a img {
+    width: 48px;
+    height: auto;
+}
+
 /*=============================================
   6. RESPONSIVE DESIGN
 =============================================*/
