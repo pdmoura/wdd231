@@ -49,7 +49,7 @@
     "address": "303 Campo Av, Fazenda Grande, BA",
     "phone": "(71) 99999-1111",
     "website": "https://www.localfarmfresh.com",
-    "image": "https://raw.githubusercontent.com/pdmoura/wdd231/refs/heads/main/chamber/images/webdev-solutions.webp",
+    "image": "https://raw.githubusercontent.com/pdmoura/wdd231/refs/heads/main/chamber/images/fashion-here.webp",
     "membershipLevel": "Bronze",
     "description": "Fornecedor de roupas e acessórios da moda."
   },
@@ -67,7 +67,7 @@
    "address": "123 Code Ave, Tech Park, SP",
    "phone": "(11) 98765-4321",
    "website": "https://www.webdevsolutions.com",
-   "image": "https://raw.githubusercontent.com/pdmoura/wdd231/refs/heads/main/chamber/images/webdev-solutions.webp",
+   "image": "https://raw.githubusercontent.com/pdmoura/wdd231/refs/heads/main/chamber/images/webdev.webp",
    "membershipLevel": "Silver",
    "description": "Desenvolvimento de sites e aplicações web de alta performance."
  },
@@ -76,7 +76,7 @@
    "address": "789 Ranking Blvd, Visibilidade Online, RJ",
    "phone": "(21) 55555-7777",
    "website": "https://www.seomasters.com",
-   "image": "https://raw.githubusercontent.com/pdmoura/wdd231/refs/heads/main/chamber/images/webdev-solutions.webp",
+   "image": "https://raw.githubusercontent.com/pdmoura/wdd231/refs/heads/main/chamber/images/seo-masters.webp",
    "membershipLevel": "Bronze",
    "description": "Especialistas em otimização para motores de busca (SEO)."
  }
