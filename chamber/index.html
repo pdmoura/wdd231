@@ -9,51 +9,57 @@
     <!--facebook meta-->
     <meta property="og:title" content="Brasília Chamber of Commerce">
     <meta property="og:description" content="Supporting local businesses and promoting economic growth in Brasília. Join us to network, find resources, and build a stronger community.">
-    <meta property="og:image" content="">
-    <meta property="og:url" content="">
+    <meta property="og:image" content="https://raw.githubusercontent.com/pdmoura/wdd231/refs/heads/main/chamber/images/logo-chamber.webp">
+    <meta property="og:url" content="https://pdmoura.github.io/wdd231/chamber/directory.html">
     <meta property="og:locale" content="en_US">
     <meta property="og:type" content="website">
-    <!---fonts-->
-    <!-- Preload the fonts -->
-    <link rel="preconnect" as="style" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700;900&display=swap">
-    <link rel="preconnect" as="style" href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap">
+    <meta property="og:site_name" content="Brasília Chamber of Commerce">
 
-    <!-- Load them asynchronously -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700;900&display=swap" media="print" onload="this.media='all'">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap" media="print" onload="this.media='all'">
+    <!-- Preload logo image -->
+    <link rel="preload" fetchpriority="high" as="image" href="images/logo-chamber.webp">
 
-    <!-- Fallback if JS is disabled -->
+    <link rel="stylesheet" href="styles/normalize.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="styles/style.css" media="print" onload="this.media='all'">
     <noscript>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700;900&display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap">
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/style.css">
     </noscript>
-    <!--css and js-->
-    <link rel="stylesheet" href="styles/style.css">
+    
     <script src="scripts/date.js" defer></script>
     <script src="scripts/base.js" defer></script>
     <!--favicon-->
     <link rel="icon" href="favicon-chamber.ico">
 </head>
 <body>
-    <header id="menu">
-        <img id="logo" src="images/logo-chamber.webp" alt="logo" loading="lazy" width="85" height="85">
-        <div id="humbutton">
+    <header>
+        <div class="header-container">
+        <div class="logo-section">
+            <img id="logo" src="images/logo-chamber.webp" alt="logo" width="85" height="85" fetchpriority="high">
             <h1 id="title">Brasília DF - Chamber of Commerce</h1>
-            <a id="hidden-menu" href="#"></a>
+        </div>
+        <div id="humbutton">
+            <button id="hidden-menu" aria-label="Menu Button"></button>
         </div>
         <nav class="navigation">
             <a class="button current" id="home" href="#">Home</a>
             <a class="button" id="discover" href="discover.html">Discover</a>
             <a class="button" id="Directory" href="directory.html">Directory</a>
-            <a class="button" id="join" href="join.html">Join</a>
+            <a class="button" id="join" href="#">Join</a>
             <a class="button" id="about" href="#">About</a>
             <a class="button" id="podcast" href="#">PodCast</a>
             <a class="button" id="events" href="#">Events</a>
         </nav>
+        </div>
     </header>
     <main>
-        <h1>Home</h1>
-
+        <div class="navigation2">
+            <h2>Business Directory</h2>
+            <div class="button2">
+                <button id="grid" aria-label="Grid View">Grid</button>
+                <button id="list" aria-label="List View">List</button>
+            </div>
+        </div>
+        <div id="members" class="grid"></div>
     </main>
     <footer>
         <div class="block">
@@ -66,7 +72,7 @@
                 <a id="git" href="https://github.com/pdmoura" target="_blank" aria-label="Github Profile"><img src="images/github.svg" class="social" alt="github icon" width="48" height="48"></a>
                 <a id="insta" href="https://www.instagram.com/pedrow_amoura/" target="_blank" aria-label="Instagram Profile"><img src="images/instagram-circle.svg" class="social" alt="instagram icon" width="48" height="48"></a>
                 <a id="face" href="https://m.facebook.com/" target="_blank" aria-label="Facebook Profile"><img src="images/facebook.svg" class="social" alt="facebook icon" width="48" height="48"></a>
-                <a id="face" href="https://linkedin.com/in/pedroalves0/" target="_blank" aria-label="LinkedIn Profile"><img src="images/linkedin-circle.svg" class="social" alt="linkedin icon" width="48" height="48"></a>
+                <a id="linkedin" href="https://linkedin.com/in/pedroalves0/" target="_blank" aria-label="LinkedIn Profile"><img src="images/linkedin-circle.svg" class="social" alt="linkedin icon" width="48" height="48"></a>
             </div>
             <div class="student">
                 <p class="foot">WDD231 BYU Project</p>
