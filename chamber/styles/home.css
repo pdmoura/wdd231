@@ -109,7 +109,11 @@ section#current-events h2 {
     background-color: var(--dark-2);
     padding: 1rem;
 }
-
+section#current-events p {
+    padding: 1rem;
+    font-size: 1.1rem;
+    text-align: center;
+}
 /************* CURRENT WEATHER ************/
 
 .weather-card {
@@ -131,6 +135,7 @@ p#temperature {
 
 p#description {
     margin-bottom: 7px;
+    text-transform: capitalize;
 }
 
 p#high, p#low, p#humidity {
@@ -156,6 +161,10 @@ div#forecast-3day {
 div.forecast-card h2 {
     background-color: var(--dark-2);
     padding: 1rem;
+}
+
+div.forecast-card p{
+    text-transform: capitalize;
 }
 
 section#spotlights h2 {
@@ -222,5 +231,8 @@ div.spotlight-card img {
         font-size: 0.9rem;
     }
 
+    section#current-events p {
+        font-size: 1rem;
+    }
 
 }
