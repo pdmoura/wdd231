@@ -1,0 +1,25 @@
+@media only screen and (min-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+        max-width: 80%;
+    }
+    .hero .appt-button {
+        padding: 20px 40px;
+        font-size: 1.3rem;
+    }
+}
+
+@media only screen and (min-width: 962px) {
+    h2 {
+        font-size: 2.5rem;
+    }
+
+    .sections {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+    
+    .business, .sections {
+        min-height: 400px;
+    }
+}

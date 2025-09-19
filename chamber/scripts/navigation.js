@@ -8,11 +8,11 @@ document.getElementById("lastModified").textContent = document.lastModified;
 //code for the hamburguer menu
 
 const mainnav = document.querySelector('.navigation');
-const hambutton = document.querySelector('#hidden-menu');
+// The ID of the hamburger button was updated from #hidden-menu to #humbutton
+const hambutton = document.querySelector('#humbutton'); 
 
-hambutton.addEventListener('click', () =>
+hambutton.addEventListener('click', () => 
 {
     mainnav.classList.toggle('show');
     hambutton.classList.toggle('show');
 });
-
