@@ -1,86 +1,96 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Business Directory</title>
     <meta name="description" content="WDD 231 - Web Frontend Development I - Pedro Alves - Chamber of Commerce: This page has the purpose to present the local companies, and to connect them.">
-    <meta name="author"  content="Pedro Alves">
-    <!--facebook meta-->
-    <meta property="og:title" content="Brasília Chamber of Commerce">
-    <meta property="og:description" content="Supporting local businesses and promoting economic growth in Brasília. Join us to network, find resources, and build a stronger community.">
+    <meta name="author" content="Pedro Alves">
+    
+    <!-- Open Graph / Facebook Meta Tags -->
+    <meta property="og:title" content="Brasília Chamber of Commerce Directory">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="Explore local businesses in Brasília. Find services, products, and opportunities in our comprehensive directory.">
     <meta property="og:image" content="https://raw.githubusercontent.com/pdmoura/wdd231/refs/heads/main/chamber/images/logo-chamber.webp">
     <meta property="og:url" content="https://pdmoura.github.io/wdd231/chamber/directory.html">
-    <meta property="og:locale" content="en_US">
-    <meta property="og:type" content="website">
     <meta property="og:site_name" content="Brasília Chamber of Commerce">
+    <meta property="og:locale" content="en_US">
 
-    <!-- Preload logo image -->
-    <link rel="preload" fetchpriority="high" as="image" href="images/logo-chamber.webp">
-
-    <link rel="stylesheet" href="styles/normalize.css" media="print" onload="this.media='all'">
-    <link rel="stylesheet" href="styles/style.css" media="print" onload="this.media='all'">
-    <noscript>
-        <link rel="stylesheet" href="styles/normalize.css">
-        <link rel="stylesheet" href="styles/style.css">
-    </noscript>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap">
     
+    <!-- Stylesheets -->
+    <link rel="preload" href="styles/directory.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="styles/header.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="styles/footer.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="styles/normalize.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+
+    <noscript>
+      <link rel="stylesheet" href="styles/directory.css">
+      <link rel="stylesheet" href="styles/header.css">
+      <link rel="stylesheet" href="styles/footer.css">
+      <link rel="stylesheet" href="styles/normalize.css">
+    </noscript>
+
+    <!-- Scripts -->
+    <script src="scripts/navigation.js" defer></script>
     <script src="scripts/date.js" defer></script>
-    <script src="scripts/base.js" defer></script>
-    <!--favicon-->
-    <link rel="icon" href="favicon-chamber.ico" type="image/x-icon">
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon-chamber.ico">
 </head>
 <body>
     <header>
         <div class="header-container">
-        <div class="logo-section">
-            <img id="logo" src="images/logo-chamber.webp" alt="logo" width="85" height="85" fetchpriority="high">
-            <h1 id="title">Brasília DF - Chamber of Commerce</h1>
-        </div>
-        <div id="humbutton">
-            <button id="hidden-menu" aria-label="Menu Button"></button>
-        </div>
-        <nav class="navigation">
-            <a class="button" id="home" href="index.html">Home</a>
-            <a class="button current" id="discover" href="#">Discover</a>
-            <a class="button" id="directory" href="directory.html">Directory</a>
-            <a class="button" id="join" href="#">Join</a>
-            <a class="button" id="about" href="#">About</a>
-            <a class="button" id="podcast" href="#">PodCast</a>
-            <a class="button" id="events" href="#">Events</a>
-        </nav>
+            <a href="#" class="logo">
+                <img id="logo-img" src="images/logo-chamber.webp" alt="Brasília Chamber of Commerce logo" width="85" height="85" fetchpriority="high">
+            </a>
+            <span>Brasília Chamber of Commerce</span>
+            <button id="humbutton" aria-label="Menu Button"></button>
+            <nav id="nav-bar" class="navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Discover</a></li>
+                    <li class="current"><a href="directory.html">Directory</a></li>
+                    <li><a href="#">Join</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">PodCast</a></li>
+                    <li><a href="#">Events</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
-    <main>
-        <div class="navigation2">
+    <main class="directory-main">
+        <div class="directory-controls">
             <h2>Business Directory</h2>
-            <div class="button2">
+            <div class="view-buttons">
                 <button id="grid" aria-label="Grid View">Grid</button>
                 <button id="list" aria-label="List View">List</button>
             </div>
         </div>
-        <div id="members" class="grid"></div>
+        <div id="members" class="grid">
+            <!-- Member cards will be dynamically inserted here by directory.js -->
+        </div>
     </main>
     <footer>
-        <div class="block">
-            <div class="contact">
-                <p id="foot-name"><strong>Brasília DF - Chamber of Commerce</strong></p>
-                <p class="foot">R. Desembargador Dr. José Dilermando Meireles <br> Av. Central Norte s/n, Cidade Jardins</p>
-                <p class="foot">+55 (61) 3627-8953</p>
-            </div>
-            <div class="socialdiv">
-                <a id="git" href="https://github.com/pdmoura" target="_blank" aria-label="Github Profile"><img src="images/github.svg" class="social" alt="github icon" width="48" height="48"></a>
-                <a id="insta" href="https://www.instagram.com/pedrow_amoura/" target="_blank" aria-label="Instagram Profile"><img src="images/instagram-circle.svg" class="social" alt="instagram icon" width="48" height="48"></a>
-                <a id="face" href="https://m.facebook.com/" target="_blank" aria-label="Facebook Profile"><img src="images/facebook.svg" class="social" alt="facebook icon" width="48" height="48"></a>
-                <a id="linkedin" href="https://linkedin.com/in/pedroalves0/" target="_blank" aria-label="LinkedIn Profile"><img src="images/linkedin-circle.svg" class="social" alt="linkedin icon" width="48" height="48"></a>
-            </div>
-            <div class="student">
-                <p class="foot">WDD231 BYU Project</p>
-                <p class="foot">&copy; <span id="year"></span> | Pedro Alves | Brazil</p>
-                <p class="foot">Last update:&nbsp;<span id="lastModified"></span></p>
-            </div>
+        <div class="info">
+            <p><strong>Brasília DF - Chamber of Commerce</strong></p>
+            <p>Av. Central Norte s/n, Cidade Jardins</p>
+            <p>+55 (61) 3627-8953</p>
+        </div>
+        <div class="social">
+            <a id="git" href="https://github.com/pdmoura" target="_blank" aria-label="Github Profile"><img src="images/github.svg" alt="github icon" width="48" height="48"></a>
+            <a id="insta" href="https://www.instagram.com/pedrow_amoura/" target="_blank" aria-label="Instagram Profile"><img src="images/instagram-circle.svg" alt="instagram icon" width="48" height="48"></a>
+            <a id="face" href="https://m.facebook.com/" target="_blank" aria-label="Facebook Profile"><img src="images/facebook.svg" alt="facebook icon" width="48" height="48"></a>
+            <a id="linkedin" href="https://linkedin.com/in/pedroalves0/" target="_blank" aria-label="LinkedIn Profile"><img src="images/linkedin-circle.svg" alt="linkedin icon" width="48" height="48"></a>
+        </div>
+        <div class="date">
+            <p class="foot">&copy; <span id="year"></span> | Pedro Alves | Brazil</p>
+            <p class="foot">Last update: <span id="lastModified"></span></p>
+            <p class="foot">WDD231 BYU Project</p>
         </div>
     </footer>
 </body>
 </html>
-
