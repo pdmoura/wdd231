@@ -7,13 +7,18 @@
     --color1: #2c3e50; /* Midnight Blue */
     --color2: #09622e; /* Dark Green */
     --color3: #eaecee; /* Light Steel Gray */
-    --roboto: "Roboto", sans-serif;
+    --roboto: "Open Sans","Roboto", Arial, sans-serif;
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
 }
 
 /* Buttons reset */
@@ -45,6 +50,10 @@ header {
     justify-content: center;
     padding: 10px;
     border-bottom: 5px solid var(--color2);
+    /* Fixed header */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 main {
@@ -75,7 +84,7 @@ footer {
 .logo-section {
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 10px;
 }
 
 #logo {
@@ -91,7 +100,6 @@ h1 {
 .navigation {
     display: flex;
     gap: 5px;
-    z-index: 100;
 }
 
 .navigation a {
@@ -123,6 +131,8 @@ h1 {
   4. MAIN CONTENT (HERO SECTION) - Hero Image
 =============================================*/
 .hero {
+    position: relative;
+    overflow: hidden;
     display: grid; /* 1. Make the hero container a grid */
     place-items: center; /* 2. Center items in the grid cell by default */
     width: 100%;
@@ -184,6 +194,11 @@ h1 {
 .sections {
     display: grid;
     grid-template-columns: 2fr 1fr;
+    min-height: 600px;
+}
+
+.business {
+    min-height: 400px;
 }
 
 section {
@@ -194,6 +209,12 @@ section {
 
 section h2 {
     text-align: center;
+}
+
+#current-events,
+#weather,
+#spotlights {
+    min-height: 300px;
 }
 
 /*=============================================
@@ -389,7 +410,7 @@ footer .block {
 
     /* title */
     #title {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 
     .hero h1 {
