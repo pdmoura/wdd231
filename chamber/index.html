@@ -28,14 +28,14 @@
     <script src="scripts/date.js" defer></script>
     <script src="scripts/base.js" defer></script>
     <!--favicon-->
-    <link rel="icon" href="favicon-chamber.ico">
+    <link rel="icon" href="favicon-chamber.ico" type="image/x-icon">
 </head>
 <body>
     <header>
         <div class="header-container">
         <div class="logo-section">
             <img id="logo" src="images/logo-chamber.webp" alt="logo" width="85" height="85" fetchpriority="high">
-            <h1 id="title">Brasília DF - Chamber of Commerce</h1>
+            <h1 id="title">Brasília- Chamber of Commerce</h1>
         </div>
         <div id="humbutton">
             <button id="hidden-menu" aria-label="Menu Button"></button>
@@ -51,21 +51,39 @@
         </nav>
         </div>
     </header>
-    <main>
-        <div class="navigation2">
-            <h2>Business Directory</h2>
-            <div class="button2">
-                <button id="grid" aria-label="Grid View">Grid</button>
-                <button id="list" aria-label="List View">List</button>
+     <main class="home-main">
+        <div class="hero">
+            <picture class="hero-picture">
+                <source srcset="https://media.gettyimages.com/id/159598173/pt/foto/the-national-congress-of-brazil.jpg?s=612x612&amp;w=gi&amp;k=20&amp;c=xambfMf4mod_BwNWAOLLllwe04HO310TxOgShclPQ6c=" media="(max-width: 1100px)" type="image/jpeg">
+                <source srcset="https://media.gettyimages.com/id/159598173/pt/foto/the-national-congress-of-brazil.jpg?s=1024x1024&amp;w=gi&amp;k=20&amp;c=-6BfnhfkAEHlvx2hrLsdcXxDY2nFeW3svOy8nTP8GQk=" media="(max-width: 1530px)" type="image/jpeg">
+                <source srcset="https://media.gettyimages.com/id/159598173/pt/foto/the-national-congress-of-brazil.jpg?s=2048x2048&amp;w=gi&amp;k=20&amp;c=eAwcp93m4sLgY1CYMHOhSvxNgzxQbXy6b7lc5jr3PxQ=" type="image/jpeg"><img class="hVA432mopcNsLitLnhRl" alt="The National Congress of Brazil" src="https://media.gettyimages.com/id/159598173/pt/foto/the-national-congress-of-brazil.jpg?s=1024x1024&amp;w=gi&amp;k=20&amp;c=-6BfnhfkAEHlvx2hrLsdcXxDY2nFeW3svOy8nTP8GQk=">
+            </picture>
+            <div class="hero-content">
+            <h1>Become a Member Today and Strengthen Your Business in Brasília!</h1>
+            <a href="join.html">
+                <button class="appt-button" aria-label="Join Button">Join Now</button>
+            </a>
             </div>
         </div>
-        <div id="members" class="grid"></div>
+        <div class="sections">
+            <section id="current-events">
+                <h2>Upcoming Events</h2>
+            </section>
+            <section id="weather">
+                <h2>Local Weather</h2>
+            </section>
+        </div>
+        <div class="business">
+            <section id="spotlights">
+                <h2>Business Spotlights</h2>
+            </section>
+        </div>
     </main>
     <footer>
         <div class="block">
             <div class="contact">
                 <p id="foot-name"><strong>Brasília DF - Chamber of Commerce</strong></p>
-                <p class="foot">R. Desembargador Dr. José Dilermando Meireles <br> Av. Central Norte s/n, Cidade Jardins</p>
+                <p class="foot">Av. Central Norte s/n, Cidade Jardins</p>
                 <p class="foot">+55 (61) 3627-8953</p>
             </div>
             <div class="socialdiv">
