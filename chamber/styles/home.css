@@ -82,7 +82,7 @@ p, button, nav {
     background-color: #219653;
 }
 
-/************** SECTIONS ***************/
+/* -************* SECTIONS **************- */
 
 #current-events, #weather, #forecast {
     margin: 2rem 1rem;
@@ -93,9 +93,8 @@ p, button, nav {
 
 .spotlight-container {
     flex: 1 1 300px;
-} */
+} 
 
-/************** SECTIONS ***************/
 section {
     margin: 2rem 1rem;
     background-color: var(--light);
