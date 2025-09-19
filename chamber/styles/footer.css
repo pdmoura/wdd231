@@ -22,6 +22,11 @@ footer p {
     line-height: 1.5;
 }
 
+footer .date p {
+    min-height: 1.5em; /* Reserves space for one line of text */
+}
+
+
 .social {
     text-align: center;
     margin: 20px 0;
