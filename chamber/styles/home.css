@@ -65,10 +65,12 @@ p, button, nav {
 }
 
 .appt-button {
+    display: inline-block;
+    text-decoration: none; 
     background-color: var(--color2);
     color: white;
     padding: 12px 24px;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     font-weight: bold;
     border: none;
     border-radius: 8px;
