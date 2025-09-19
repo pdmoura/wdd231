@@ -9,3 +9,4 @@ export function populateSections(sections) {
     sectionSelect.appendChild(option);
   });
 }
+
