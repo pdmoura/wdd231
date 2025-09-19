@@ -30,6 +30,8 @@
     
     <!-- Scripts -->
     <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/spotlight.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
     
     <!-- Favicon -->
     <link rel="icon" href="favicon-chamber.ico">
@@ -75,12 +77,33 @@
                 <h2>Upcoming Events</h2>
             </section>
             <section id="weather">
-                <h2>Local Weather</h2>
+                <h2>Current Weather</h2>
+                <div class="weather-card">
+                    <div class="img-icon">
+                        <img id="icon" src="" alt="">
+                    </div>
+                    <div class="weather-info">
+                        <p id="city"></p>
+                        <p id="temperature"></p>
+                        <p id="description"></p>
+                        <p id="high"></p>
+                        <p id="low"></p>
+                        <p id="humidity"></p>
+                    </div>
+                </div>
+            </section>
+            <section id="forecast">
+                <div class="forecast-card">
+                    <h2>Weather Forecast</h2>
+                    <!-- JS will insert 3-day forecast here-->
+                    <div id="forecast-3day"></div>
+                </div>
             </section>
         </div>
         <div class="business">
             <section id="spotlights">
                 <h2>Business Spotlights</h2>
+                <div id="spotlight-cards"></div> <!--JS will insert cards here-->
             </section>
         </div>
     </main>

@@ -81,19 +81,122 @@ p, button, nav {
 }
 
 /************** SECTIONS ***************/
-.sections, .business {
-    width: 100%;
-}
 
-section {
-    margin: 2rem;
+#current-events, #weather, #forecast {
+    margin: 2rem 1rem;
     background-color: var(--color3);
     padding: 2rem;
     min-height: 200px;
 }
 
+.spotlight-container {
+    flex: 1 1 300px;
+} */
+
+/************** SECTIONS ***************/
+section {
+    margin: 2rem 1rem;
+    background-color: var(--light);
+}
+
 section h2 {
     text-align: center;
+}
+
+/************* CURRENT EVENTS **************/
+
+section#current-events h2 {
+    background-color: var(--dark-2);
+    padding: 1rem;
+}
+
+/************* CURRENT WEATHER ************/
+
+.weather-card {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin: 2rem;
+    padding-bottom: 1rem;
+}
+
+section#weather h2 {
+    background-color: var(--dark-2);
+    padding: 1rem;
+}
+
+p#temperature {
+    margin-bottom: 10px;
+}
+
+p#description {
+    margin-bottom: 7px;
+}
+
+p#high, p#low, p#humidity {
+    margin-bottom: 4px;
+}
+
+p#city {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+/**************** 3-DAY FORECAST *****************/
+
+div#forecast-3day {
+    text-align: center;
+    margin: 1rem;
+    padding-bottom: 1rem;
+}
+
+.forecast-day {
+    margin: .5rem;
+}
+
+div.forecast-card h2 {
+    background-color: var(--dark-2);
+    padding: 1rem;
+}
+
+section#spotlights h2 {
+    background-color: var(--dark-1);
+    padding: 1rem;
+}
+
+/*************** SPOTLIGHTS ***************/
+
+div.spotlight-container {
+    background-color: #fff;
+    padding: 1rem;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6);
+}
+
+div.spotlight-container h3 {
+    margin: 10px 0;
+}
+
+div.spotlight-container a {
+    color: var(--dark-1);
+    font-weight: bold;
+    font-family: var(--paragraph-font);
+}
+
+div.spotlight-card img {
+    width: 100px;
+    height: 100px;
+}
+
+#spotlight-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 0 2rem 2rem;
+    text-align: center;
+}
+
+#spotlights{
+    background-color: var(--color3);
+    margin: 0 1rem 2rem;
 }
 
 /* Media Query for Mobile View */
@@ -108,6 +211,16 @@ section h2 {
     }
 
     section h2{
-        font-size: 0.98rem; /* Adjust section heading size */
+        font-size: 1rem; 
     }
+
+    h3{
+        font-size: 1rem;
+    }
+    
+    .spotlight-card p, .spotlight-card a {
+        font-size: 0.9rem;
+    }
+
+
 }
