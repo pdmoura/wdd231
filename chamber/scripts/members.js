@@ -22,7 +22,7 @@ const displayCompanies = (companies) => {
 
         card.innerHTML = `
             <img src="images/${company.image}" alt="logo of ${company.name}" loading="lazy" width="200" height="200">
-            <h3>${company.name}</h3>
+            <h2>${company.name}</h2>
             <p>${company.address}</p>
             <p>${company.phone}</p>
             <p><a href="${company.website}" target="_blank">Visit Website</a></p>

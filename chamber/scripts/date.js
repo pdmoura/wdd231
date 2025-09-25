@@ -31,7 +31,7 @@ async function getMember() {
             // Use the generated imgTag in your innerHTML
             div.innerHTML = `
                 ${imgTag}
-                <h3 class="name">${member.name}</h3>
+                <h2 class="name">${member.name}</h2>
                 <p><strong>Level:</strong> ${member.membershipLevel}</p>
                 <p><strong>Phone:</strong> ${member.phone}</p>
                 <p><strong>Address:</strong> ${member.address}</p>
