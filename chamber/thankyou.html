@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Directory | Chamber of Commerce</title>
-    <meta name="description" content="WDD 231 - Web Frontend Development I - Pedro Alves - Chamber of Commerce: This page has the purpose to present the local companies, and to connect them.">
+    <title>Brasília Chamber of Commerce</title>
+    <meta name="description" content="WDD 231 - Web Frontend Development I - Pedro Alves - Chamber of Commerce: Thank you for your application to the Brasília Chamber of Commerce. We have received your information and will be in touch shortly.">
     <meta name="author" content="Pedro Alves">
     
     <!-- Open Graph / Facebook Meta Tags -->
-    <meta property="og:title" content="Brasília Chamber of Commerce Directory">
+    <meta property="og:title" content="Brasília Chamber of Commerce">
     <meta property="og:type" content="website">
-    <meta property="og:description" content="Explore local businesses in Brasília. Find services, products, and opportunities in our comprehensive directory.">
+    <meta property="og:description" content="Your application to the Brasília Chamber of Commerce has been successfully submitted. We're excited to review your information!">
     <meta property="og:image" content="https://raw.githubusercontent.com/pdmoura/wdd231/refs/heads/main/chamber/images/logo-chamber.webp">
     <meta property="og:url" content="https://pdmoura.github.io/wdd231/chamber/directory.html">
     <meta property="og:site_name" content="Brasília Chamber of Commerce">
@@ -20,27 +20,20 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    
+
     <!-- Stylesheets -->
-    <link rel="preload" href="styles/normalize.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <link rel="preload" href="styles/directory.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <link rel="preload" href="styles/header.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <link rel="preload" href="styles/footer.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-
-    <noscript>
-        <link rel="stylesheet" href="styles/normalize.css">
-        <link rel="stylesheet" href="styles/directory.css">
-        <link rel="stylesheet" href="styles/header.css">
-        <link rel="stylesheet" href="styles/footer.css">
-    </noscript>
-
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/thankyou.css">
+    
     <!-- Scripts -->
     <script src="scripts/navigation.js" defer></script>
-    <script src="scripts/date.js" defer></script>
+    <script src="scripts/capture-form-data.js" defer></script>
 
-    <!-- Favicon -->
     <link rel="icon" href="favicon-chamber.ico">
 </head>
+
 <body>
     <header>
         <div class="header-container">
@@ -53,8 +46,8 @@
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="#">Discover</a></li>
-                    <li class="current"><a href="directory.html">Directory</a></li>
-                    <li><a href="join.html">Join</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li class="current"><a href="join.html">Join</a></li>
                     <li><a href="#">About</a></li>
                     <li><a href="#">PodCast</a></li>
                     <li><a href="#">Events</a></li>
@@ -62,17 +55,13 @@
             </nav>
         </div>
     </header>
-    <main class="directory-main">
-        <div class="directory-controls">
-            <h1>Directory - Chamber of Commerce</h1>
-            <div class="view-buttons">
-                <button id="grid" aria-label="Grid View">Grid</button>
-                <button id="list" aria-label="List View">List</button>
-            </div>
-        </div>
-        <div id="members" class="grid">
-            <!-- Member cards will be dynamically inserted here by directory.js -->
-        </div>
+
+    <main>
+
+        <h1>Thanks</h1>
+        <p>We appreciate you interest in joining the chamber of commerce. Here are the details of your application:</p>
+      <div id="results"></div>
+
     </main>
     <footer>
         <div class="info">
@@ -92,5 +81,6 @@
             <p class="foot">WDD231 BYU Project</p>
         </div>
     </footer>
+    
 </body>
 </html>

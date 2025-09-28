@@ -1,0 +1,104 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Make body at least full viewport height */
+    background-color: #f4f7f6; /* Light gray background to make the card pop */
+    font-family: var(--roboto);
+}
+
+main {
+    flex-grow: 1;
+    padding: 2rem 1rem;
+    max-width: 1200px;
+    margin: 2rem auto;
+    background-color: transparent;
+    box-shadow: none;
+}
+h1 {
+    color: #2c3e50; /* Midnight Blue */
+    text-align: center;
+    margin-bottom: 1rem;
+}
+main > p {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #313030;
+    margin-bottom: 2rem;
+    font-weight: 500;
+}
+#results {
+    background-color: #ffffff;
+    border-radius: 16px;
+    font-family: "Open Sans", sans-serif;
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    padding: 2.5rem 2rem;
+    border-top: 5px solid #09622e; /* Accent color top border */
+}
+.icon-container svg {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 1rem;
+}
+#results h2 {
+    color: #2c3e50;
+    font-size: 1.7rem;
+    font-weight: 600;
+    margin: 0 0 1.5rem 0;
+}
+.results-body {
+    text-align: left;
+    border-top: 1px solid #e9ecef;
+    padding-top: 1.5rem;
+}
+#results p {
+    margin: 0.6rem 0;
+    color: #555;
+    display: block; /* Simple block layout for each item */
+    padding-bottom: 0;
+    border-bottom: none;
+    overflow-wrap: break-word; /* Prevents text from overflowing its container */
+    word-break: break-all; /* Forcefully breaks long words to prevent overflow */
+}
+#results strong {
+    color: #2c3e50;
+    font-weight: 600;
+    margin-right: 0.5em;
+}
+.results-footer {
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid #e9ecef;
+}
+.results-footer small {
+    color: #888;
+    font-size: 0.9rem;
+}
+
+/* --- RESPONSIVE STYLES --- */
+@media (max-width: 600px) {
+    main {
+        padding: 1rem;
+        margin: 1rem auto;
+    }
+    #results {
+        padding: 2rem 1.5rem;
+        text-align: left; /* Align text to the left on mobile for readability */
+    }
+    #results h2 {
+        font-size: 1.4rem;
+        text-align: center; /* Keep the main heading centered */
+    }
+    main > p {
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+    }
+    #results p {
+        font-size: 0.9rem; /* Reduce font size for smaller screens */
+        line-height: 1.6; /* Improve line spacing */
+    }
+}
