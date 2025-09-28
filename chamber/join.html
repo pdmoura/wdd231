@@ -62,20 +62,20 @@
         <section class="form-container">
             <h2>Membership Application</h2>
             <form method="GET" action="thankyou.html" class="designOne">
-                <label>First Name <input type="text" name="first" required autocomplete="given-name" title="Your First Name"></label>
-                <label>Last Name <input type="text" name="last" required autocomplete="family-name" title="Your Last Name"></label>
-                <label>Title <input type="text" name="title" autocomplete="organization-title" title="Your Title (at least 7 characters)" placeholder="Your Job Title" pattern="[a-zA-Z\s-]{7,}"></label>
-                <label>Email <input type="email" name="email" required placeholder="example@company.com"  title="Your Email" autocomplete="email"></label>
-                <label>Cell Phone <input type="tel" name="phone"  autocomplete="tel" title="A valid phone number" placeholder="(123) 456-7890" ></label>
-                <label>Organization <input type="text" name="organization" required  title="Your Organization's Name" placeholder="Your Company Name" autocomplete="organization"></label>
+                <label>First Name *<input type="text" name="first" required autocomplete="given-name" placeholder="John" title="Your First Name"></label>
+                <label>Last Name *<input type="text" name="last" required autocomplete="family-name" title="Your Last Name" placeholder="Doe"></label>
+                <label>Organization Title <input type="text" name="title" autocomplete="organization-title" title="Your Title (at least 7 characters)" placeholder="Your Job Title" pattern="[a-zA-Z\s-]{7,}"></label>
+                <label>Email *<input type="email" name="email" required placeholder="example@company.com"  title="Your Email" autocomplete="email"></label>
+                <label>Cell Phone *<input type="tel" name="phone" required autocomplete="tel" title="A valid phone number" placeholder="(123) 456-7890" ></label>
+                <label>Business Name *<input type="text" name="organization" required  title="Your Organization's Name" placeholder="Your Company Name" autocomplete="organization"></label>
                 <label>Business Description<textarea name="description" placeholder="Tell us about your organization..."></textarea></label>
             
-                <h3>Select a Membership Level</h3>
+                <h3>Select a Membership Level *</h3>
                 <div class="radio-group">
-                    <label><input type="radio" name="level" value="Non Profit Membership"> Non Profit Membership</label>
-                    <label><input type="radio" name="level" value="Bronze Membership" checked> Bronze Membership</label>
-                    <label><input type="radio" name="level" value="Silver Membership"> Silver Membership</label>
-                    <label><input type="radio" name="level" value="Gold Membership"> Gold Membership</label>
+                    <label><input type="radio"  name="level" value="Non Profit Membership"> Non Profit Membership</label>
+                    <label><input type="radio"  name="level" value="Bronze Membership"> Bronze Membership</label>
+                    <label><input type="radio"  name="level" value="Silver Membership"> Silver Membership</label>
+                    <label><input type="radio"  name="level" value="Gold Membership" checked > Gold Membership</label>
                 </div>
             
                 <input type="submit" value="Apply for Membership">
@@ -109,7 +109,7 @@
             <dialog id="mlModal">
                 <div>
                     <h4 id="mltitle">Membership Details</h4>
-                    <button id="closeModal">X</button>
+                    <button id="closeModal">×</button>
                 </div>
                 <span id="mldetails"></span>
             </dialog>
