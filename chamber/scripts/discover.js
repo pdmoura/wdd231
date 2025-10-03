@@ -17,7 +17,7 @@ async function getPlaces() {
 
         const data = await answer.json();
 
-        data.forEach((place) => {
+        data.forEach((place,index) => {
             const div = document.createElement("div");
             div.classList.add("place");
 
