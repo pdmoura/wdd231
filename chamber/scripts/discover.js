@@ -1,7 +1,5 @@
-document.addEventListener('DOMContentLoaded', function () {
-    getPlaces();
-    handleVisitorMessage();
-});
+getPlaces();
+handleVisitorMessage();
 
 
 // Fetching and displaying places from places.json
@@ -23,10 +21,16 @@ async function getPlaces() {
             const div = document.createElement("div");
             div.classList.add("place");
 
+            // Prioritize the first image (LCP) and lazy load the rest.
+            const isFirstImage = index === 0;
+            const imgAttributes = isFirstImage 
+                ? `fetchpriority="high"` 
+                : `loading="lazy"`;
+
             div.innerHTML = `
                 <h2>${place.name}</h2>
                     <figure>
-                        <img src="${place.imageUrl}" alt="Image of ${place.name}" fetchpriority="high" loading="lazy"  width="300" height="200">
+                        <img src="${place.imageUrl}" alt="Image of ${place.name}" ${imgAttributes}  width="300" height="200" onerror="this.onerror=null;this.src='https://placehold.co/300x200/09622e/eaecee?text=Image+Not+Found';">
                     </figure>
                     <address>${place.address}</address>
                     <p>${place.description}</p>
@@ -37,6 +41,7 @@ async function getPlaces() {
         });
     } catch (erro) {
         console.error("Issue", erro);
+        placesContainer.innerHTML = `<p style="text-align: center; color: red;">Could not load places data.</p>`;
     }
 }
 
