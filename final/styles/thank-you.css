@@ -1,0 +1,149 @@
+/* styles/thank-you.css */
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.thank-you-section {
+    text-align: center;
+    padding: 80px 30px;
+    background-color: var(--gray-100); /* Lighter, cleaner background */
+    color: var(--gray-900);
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border-radius: 15px;
+    box-shadow: var(--shadow-md); /* Using new shadow variable */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: fadeInUp 0.8s ease-out; /* Added fade-in animation */
+}
+
+.thank-you-section h1 {
+    font-size: 3.5em;
+    margin-bottom: 20px;
+    color: var(--primary); /* Using primary color for main heading */
+}
+
+.thank-you-section p {
+    font-size: 1.3em;
+    line-height: 1.8;
+    max-width: 800px;
+    margin-bottom: 15px;
+    color: var(--gray-600); /* Softer text color */
+}
+
+.thank-you-section p:last-of-type {
+    margin-bottom: 40px;
+}
+
+.submitted-info {
+    background-color: var(--light); /* Using light variable for white */
+    border: 1px solid var(--gray-200); /* Using new gray for border */
+    border-radius: 10px;
+    box-shadow: var(--shadow-sm); /* Subtle shadow */
+    padding: 30px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    width: 100%;
+    max-width: 600px;
+    text-align: left;
+}
+
+.submitted-info h2 {
+    color: var(--primary);
+    margin-bottom: 20px;
+    font-size: 2em;
+    text-align: center;
+}
+
+.submitted-info p {
+    font-size: 1.1em;
+    color: var(--gray-900);
+    margin-bottom: 10px;
+}
+
+.submitted-info p strong {
+    color: var(--primary); /* Make the labels match the primary color */
+}
+
+/* --- BUTTONS UPDATED TO MATCH base.css --- */
+.btn-back-home, .btn-check-menu {
+    display: inline-block;
+    padding: 1rem 2.5rem;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 1rem;
+    transition: var(--transition);
+    border: none;
+    cursor: pointer;
+    margin: 10px;
+}
+
+/* Style for the primary button */
+.btn-back-home {
+    background: var(--gradient-primary);
+    color: var(--light);
+    box-shadow: var(--shadow-md);
+}
+
+.btn-back-home:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-lg);
+}
+
+/* Style for the secondary button */
+.btn-check-menu {
+    background: transparent;
+    color: var(--primary);
+    border: 2px solid var(--primary);
+}
+
+.btn-check-menu:hover {
+    background: var(--primary);
+    color: var(--light);
+    transform: translateY(-3px);
+}
+
+/* Responsive adjustments for thank-you.css */
+@media (max-width: 768px) {
+    .thank-you-section {
+        padding: 60px 20px;
+    }
+    .thank-you-section h1 {
+        font-size: 2.5em;
+    }
+    .thank-you-section p {
+        font-size: 1.1em;
+    }
+    .submitted-info {
+        padding: 25px;
+    }
+    .submitted-info h2 {
+        font-size: 1.8em;
+    }
+    .submitted-info p {
+        font-size: 1em;
+    }
+    .btn-back-home, .btn-check-menu {
+        padding: 12px 25px;
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    .thank-you-section {
+        padding: 40px 15px;
+    }
+    .thank-you-section h1 {
+        font-size: 2em;
+    }
+    .btn-back-home, .btn-check-menu {
+        display: block; /* Stack buttons on very small screens */
+        width: 90%;
+        margin: 10px auto;
+    }
+}

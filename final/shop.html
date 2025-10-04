@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover our delicious menu featuring açaí bowls and tropical treats at Purple Cream.">
+    <meta name="author" content="Pedro Alves">
+
+    <meta property="og:title" content="Our Menu - Purple Cream">
+    <meta property="og:description" content="Explore our delicious menu of açaí bowls and tropical treats at Purple Cream.">
+    <meta property="og:image" content="https://pdmoura.github.io/wdd231/project/images/og-image.webp">
+    <meta property="og:url" content="https://pdmoura.github.io/wdd231/final/shop.html">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:type" content="website">
+
+    <title>Menu - Purple Cream</title>
+    
+    <link rel="preload" href="https://fonts.gstatic.com/s/poppins/v21/pxiEyp8kv8JHgFVrJJfecg.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="https://fonts.gstatic.com/s/poppins/v21/pxiByp8kv8JHgFVrLCz7Z1xlFQ.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="https://fonts.gstatic.com/s/poppins/v21/pxiByp8kv8JHgFVrLBT5Z1xlFQ.woff2" as="font" type="font/woff2" crossorigin>
+
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/base-responsive.css">
+    <link rel="stylesheet" href="styles/shop.css">
+    <link rel="stylesheet" href="styles/shop-cart.css">
+    
+    <script src="scripts/menu.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/shop.js" defer></script>
+
+    <link rel="icon" href="favicon.ico">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;900&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+
+    <noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;900&display=swap">
+    </noscript>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a class="logo" href="#">
+                <img src="images/logo.webp" fetchpriority="high" alt="Purple Cream logo" width="90" height="80">
+                <span class="logo-text">Purple Cream</span>
+            </a>
+            <nav id="mainNav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html" class="active">Menu</a></li>
+                    <li><a href="about-us.html">About</a></li>
+                    <li><a href="index.html#contato">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="cart-icon-container" id="cartIcon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" fill="currentColor">
+                    <path d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H200.4c-35.1 0-64.8-26.9-69.5-62.9L108.6 124.7 17.5 73.6C10 70.2 0 75.5 0 84V24zm176 352a48 48 0 1 1 0 96 48 48 0 1 1 0-96zm336 0a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"/>
+                </svg>
+                <span id="cart-count" class="cart-count">0</span>
+            </div>
+            <div class="hamburger" id="hamburgerButton">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+    
+    <main class="shop-main">
+        <section class="menu-hero">
+            <h1>Our Delicious Açaí Bowls</h1>
+            <p>Explore our wide selection of fresh and energizing açaí creations and customize your perfect bowl!</p>
+        </section>
+
+        <div class="acai-menu-grid" id="acaiGrid">
+            <!-- Products will be loaded dynamically -->
+        </div>
+    </main>
+
+    <div class="cart-modal-overlay" id="cartModalOverlay">
+        <div class="cart-modal">
+            <button class="close-cart-btn" id="closeCartBtn">✕</button>
+            <h2>Your cart</h2>
+            <div class="cart-items" id="cartItemsContainer">
+                <!-- Cart items will be dynamically added here -->
+            </div>
+            <div class="cart-summary">
+                <p>Subtotal: <span id="cartSubtotal">$ 0,00</span></p>
+                <p>Tax (5%): <span id="cartTax">$ 0,00</span></p>
+                <p class="total">Total: <span id="cartTotal">$ 0,00</span></p>
+            </div>
+            <button class="checkout-btn" id="checkoutBtn">Finish Order</button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Purple Cream</h3>
+                <p>Rua Campo do Brito, 345 - Grageru</p>
+                <p>Aracaju - SE, 49025-060</p>
+                <p>info@kingacai.org</p>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Menu</a></li>
+                    <li><a href="about-us.html">About</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Social Media</h3>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/profile.php?id=100005712794002" target="_blank" title="Facebook" aria-label="Facebook profile">
+                        <img src="images/facebook.svg" alt="Facebook" width="32" height="32">
+                    </a>
+                    <a href="https://www.instagram.com/pedrow_amoura/" target="_blank" title="Instagram" aria-label="Instagram profile">
+                        <img src="images/instagram-circle.svg" alt="Instagram" width="32" height="32">
+                    </a>
+                    <a href="https://www.github.com/pdmoura" target="_blank" title="Github" aria-label="Github profile">
+                        <img src="images/github.svg" alt="Github" width="32" height="32">
+                    </a>
+                    <a href="https://www.linkedin.com/in/pedroalves0" target="_blank" title="Linkedin" aria-label="Linkedin profile">
+                        <img src="images/linkedin-circle.svg" alt="Linkedin" width="32" height="32">
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>🌴 Pedro Alves 🌴 Brazil</p>
+            <p>© <span id="currentYear">2024</span> Purple Cream - All rights reserved</p>
+            <p><strong>Website Video Demonstration</strong></p>
+            <p id="lastModified">&nbsp;</p>
+        </div>
+    </footer>
+</body>
+</html>

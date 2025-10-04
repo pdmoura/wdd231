@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover the delicious taste of Brazil at Purple Cream — your go-to spot for fresh, authentic açaí bowls, smoothies, and natural toppings. Made with real Amazon açaí and served with love.">
+    <meta name="author" content="Pedro Alves">
+
+    <meta property="og:title" content="Purple Cream">
+    <meta property="og:description" content="Purple Cream brings you the true flavor of Brazil with creamy, refreshing açaí bowls made from real Amazon fruit. Fresh ingredients, bold taste, and good vibes await!">
+    <meta property="og:image" content="https://pdmoura.github.io/wdd231/project/images/og-image.webp">
+    <meta property="og:url" content="https://pdmoura.github.io/wdd231/project/">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:type" content="website">
+
+    <title>Purple Cream - Aracaju's Best Açaí</title>
+
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/base-responsive.css">
+
+    <script src="scripts/menu.js" defer></script>
+    <script src="scripts/contact-us.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+
+    <link rel="icon" href="favicon.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;900&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+
+    <noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;900&display=swap">
+    </noscript>
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <a class="logo" href="#">
+                <img src="images/logo.webp" alt="The King of Açaí Aju logo" width="90" height="80">
+                <span class="logo-text">Purple Cream</span>
+            </a>
+            <nav id="mainNav">
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="shop.html">Menu</a></li>
+                    <li><a href="about-us.html">About</a></li>
+                    <li><a href="#contato">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="hamburger" id="hamburgerButton">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+    
+    <main>
+        <section class="hero-section">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <span class="hero-badge">🌴 Authentic Flavor of the Amazon</span>
+                    <h1>The Freshest Açaí in Aracaju!</h1>
+                    <p>Dive into our delicious and energizing açaí bowls, made with the freshest ingredients and a hint of Brazilian passion. Perfect for any time of day!</p>
+                    <div class="hero-buttons">
+                        <a href="shop.html" class="btn-primary">Explore Menu</a>
+                        <a href="#contato" class="btn-secondary">Talk with us</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="image-decoration"></div>
+                    <img src="images/hero1.webp" srcset="images/hero-medium-small.webp 371w, images/hero1.webp 527w" sizes="(max-width: 600px) 371px, 527px"
+                    fetchpriority="high" alt="Bowl de Açaí Apetitoso">
+                </div>
+            </div>
+        </section>
+
+        <section class="features-section">
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🍇</div>
+                    <h2>100% Natural</h2>
+                    <p>Pure Amazonian açaí, no preservatives</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h2>Super Energy</h2>
+                    <p>Rich in antioxidants and nutrients</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">❤️</div>
+                    <h2>Made with Love</h2>
+                    <p>Prepared with passion and dedication</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🌟</div>
+                    <h2>Fresh Ingredients</h2>
+                    <p>Top quality fruits and toppings</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <h2 class="section-title">Discover Our Universe</h2>
+            <div class="cta-grid">
+                <div class="cta-card">
+                    <div class="cta-image">
+                        <img src="images/employees.webp" alt="Team working at Purple Cream">
+                    </div>
+                    <div class="cta-content">
+                        <h3>Our Story</h3>
+                        <p>Discover our passion for açaí and how we bring you the best quality.</p>
+                        <a href="about-us.html" class="cta-link">Learn More →</a>
+                    </div>
+                </div>
+                
+                <div class="cta-card">
+                    <div class="cta-image">
+                        <img src="images/shop.webp"  alt="Bowl de açaí com toppings">
+                    </div>
+                    <div class="cta-content">
+                        <h3>Explore Our Menu</h3>
+                        <p>Discover a wide variety of fresh açaí creations and delicious toppings.</p>
+                        <a href="shop.html" class="cta-link">See the Menu →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-section" id="contato">
+            <div class="contact-container">
+                <h2 class="section-title">Contact Us</h2>
+                <p class="section-subtitle">We'd love to hear from you! Share your suggestions, or ask any questions.</p>
+                
+                <div class="contact-grid">
+                    <!-- Formulário -->
+                    <div class="contact-form-card">
+                        <h3>✉️ Send your Message</h3>
+                        <form id="suggestionForm">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" required autocomplete="given-name" placeholder="Your Full name">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required autocomplete="email" placeholder="your@email.com">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="suggestion">Message</label>
+                                <textarea id="suggestion" name="suggestion" rows="5" required placeholder="Share your ideas, feedbacks or flavor requests..."></textarea>
+                            </div>
+
+                            <button type="submit" class="submit-btn">Submit Message</button>
+                        </form>
+                        <div id="message" class="message"></div>
+                    </div>
+
+                    <!-- Mapa -->
+                    <div class="map-container">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3917.4978703643483!2d-37.0475518!3d-10.925714099999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x71ab384790463e3%3A0x7f788fa5901744aa!2sR.%20Campo%20do%20Brito%2C%20345%20-%2013%20de%20Julho%2C%20Aracaju%20-%20SE%2C%2049015-460!5e0!3m2!1spt-BR!2sbr!4v1750375439834!5m2!1spt-BR!2sbr"
+                            allowfullscreen="" 
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"
+                            title="Purple Cream Location Map">
+                        </iframe>
+                    </div>
+                </div>
+
+                <!-- Cards de Informação embaixo -->
+                <div class="contact-info-grid">
+                    <div class="contact-info-card">
+                        <h3>📍 Our Location</h3>
+                        <p><strong>Rua Campo do Brito, 345</strong></p>
+                        <p>Grageru, Aracaju - SE</p>
+                        <p>CEP: 49025-060</p>
+                        <p>📧 info@kingacai.org</p>
+                    </div>
+
+                    <div class="contact-info-card whatsapp-card">
+                        <h3>💬 Chat with Us!</h3>
+                        <p>Have a quick question or want to place an order? Contact us on WhatsApp!</p>
+                        <a href="https://wa.me/5579998877665" target="_blank" class="whatsapp-btn">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+                            </svg>
+                            (61) 90100-0101
+                        </a>
+                    </div>
+
+                    <div class="contact-info-card hours-card">
+                        <h3>🕐 Business Hours</h3>
+                        <p><strong>Monday – Friday:</strong> 10:00 AM – 8:00 PM</p>
+                        <p><strong>Saturday:</strong> 10:00 AM – 10:00 PM</p>
+                        <p><strong>Sunday:</strong> 12:00 PM – 8:00 PM</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Purple Cream</h3>
+                <p>Rua Campo do Brito, 345 - Grageru</p>
+                <p>Aracaju - SE, 49025-060</p>
+                <p>info@kingacai.org</p>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Menu</a></li>
+                    <li><a href="about-us.html">About</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Social Media</h3>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/profile.php?id=100005712794002" target="_blank" title="Facebook" aria-label="Facebook profile">
+                        <img src="images/facebook.svg" alt="Facebook" width="32" height="32">
+                    </a>
+                    <a href="https://www.instagram.com/pedrow_amoura/" target="_blank" title="Instagram" aria-label="Instagram profile">
+                        <img src="images/instagram-circle.svg" alt="Instagram" width="32" height="32">
+                    </a>
+                    <a href="https://www.github.com/pdmoura" target="_blank" title="Github" aria-label="Github profile">
+                        <img src="images/github.svg" alt="Github" width="32" height="32">
+                    </a>
+                    <a href="https://www.linkedin.com/in/pedroalves0" target="_blank" title="Linkedin" aria-label="Linkedin profile">
+                        <img src="images/linkedin-circle.svg" alt="Linkedin" width="32" height="32">
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>🌴 Pedro Alves 🌴 Brazil</p>
+            <p>© <span id="currentYear"></span> Purple Cream - All rights reserved</p>
+            <p><strong>Website Video Demonstration</strong></p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+</body>
+</html>

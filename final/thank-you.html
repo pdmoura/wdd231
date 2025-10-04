@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Thank you for your submission to Purple Cream! We appreciate your feedback.">
+    <meta name="author" content="Pedro Alves">
+
+    <meta property="og:title" content="Thank You - Purple Cream">
+    <meta property="og:description" content="We've received your message. Thank you for contacting Purple Cream!">
+    <meta property="og:image" content="https://pdmoura.github.io/wdd231/project/images/og-image.webp">
+    <meta property="og:url" content="https://pdmoura.github.io/wdd231/project/thankyou.html">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:type" content="website">
+
+    <title>Thank You! - Purple Cream</title>
+
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/base-responsive.css">
+    <link rel="stylesheet" href="styles/thank-you.css"> 
+
+    <script src="scripts/menu.js" defer></script>
+    <script src="scripts/thank-you.js" defer></script> 
+    <script src="scripts/getdates.js" defer></script>
+
+    <link rel="icon" href="favicon.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a class="logo" href="#">
+                <img src="images/logo.webp" alt="Purple Cream logo" width="80" height="70">
+                <span class="logo-text">Purple Cream</span>
+            </a>
+            <nav id="mainNav">
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="shop.html">Menu</a></li>
+                    <li><a href="about-us.html">About</a></li>
+                    <li><a href="index.html#contato">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="hamburger" id="hamburgerButton">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="thank-you-section">
+            <h1>Thank You for Your Feedback!</h1>
+            <p>We truly appreciate you taking the time to share your thoughts with us.</p>
+            <p>Your submission helps us grow and improve the <strong>Purple Cream</strong> experience.</p>
+            
+            <div class="submitted-info">
+                <h2>Here's what you submitted:</h2>
+                <p><strong>Name:</strong> <span id="submittedName"></span></p>
+                <p><strong>Email:</strong> <span id="submittedEmail"></span></p>
+                <p><strong>Message:</strong> <span id="submittedSuggestion"></span></p>
+            </div>
+
+            <a href="index.html" class="btn-back-home">Back to Home</a>
+            <a href="shop.html" class="btn-check-menu">Check Our Menu</a>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Purple Cream</h3>
+                <p>Rua Campo do Brito, 345 - Grageru</p>
+                <p>Aracaju - SE, 49025-060</p>
+                <p>info@kingacai.org</p>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Menu</a></li>
+                    <li><a href="about-us.html">About</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Social Media</h3>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/profile.php?id=100005712794002" target="_blank" title="Facebook" aria-label="Facebook profile">
+                        <img src="images/facebook.svg" alt="Facebook" width="32" height="32">
+                    </a>
+                    <a href="https://www.instagram.com/pedrow_amoura/" target="_blank" title="Instagram" aria-label="Instagram profile">
+                        <img src="images/instagram-circle.svg" alt="Instagram" width="32" height="32">
+                    </a>
+                    <a href="https://www.github.com/pdmoura" target="_blank" title="Github" aria-label="Github profile">
+                        <img src="images/github.svg" alt="Github" width="32" height="32">
+                    </a>
+                    <a href="https://www.linkedin.com/in/pedroalves0" target="_blank" title="Linkedin" aria-label="Linkedin profile">
+                        <img src="images/linkedin-circle.svg" alt="Linkedin" width="32" height="32">
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>🌴 Pedro Alves 🌴 Brazil</p>
+            <p>© <span id="currentYear"></span> Purple Cream - All rights reserved</p>
+            <p><strong>Website Video Demonstration</strong></p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+</body>
+</html>

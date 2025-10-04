@@ -1,0 +1,58 @@
+[
+    {
+        "id": "owner-1",
+        "name": "Sofia Rodrigues",
+        "title": "Founder & CEO",
+        "description": "Sofia's dream of bringing authentic Amazonian açaí to Aracaju has become a reality with Purple Cream. Her passion for quality and healthy living drives the company's vision.",
+        "image": "images/owner.webp"
+    },
+    {
+        "id": "partner-1",
+        "name": "João Santos",
+        "title": "Operations Manager",
+        "description": "With a keen eye for logistics and a commitment to efficiency, João ensures that every ingredient is fresh and every operation runs smoothly, from sourcing to serving.",
+        "image": "images/partner1.webp"
+    },
+    {
+        "id": "partner-2",
+        "name": "Carolina Souza",
+        "title": "Brand & Design Manager",
+        "description": "Carolina is the artistic mind behind our enchanting bowl presentations and engaging customer experience. Her creativity adds a unique touch to every aspect of our brand.",
+        "image": "images/partner2.webp"
+    },
+    {
+        "id": "employee-1",
+        "name": "Daniel Costa",
+        "title": "Supply Chain & Logistics Manager",
+        "description": "Daniel is the mastermind behind our logistics. He manages the journey of our açaí from the Amazon to all our stores, ensuring every ingredient is sustainably sourced and delivered fresh.",
+        "image": "images/employee1.webp"
+    },
+    {
+        "id": "employee-2",
+        "name": "Camila Ferreira",
+        "title": "Human Resources Manager",
+        "description": "Camila is dedicated to building our amazing team. She manages recruitment, training, and development programs, ensuring that our staff feels valued and empowered across all branches.",
+        "image": "images/employee2.webp"
+    },
+    {
+        "id": "employee-3",
+        "name": "Thiago Oliveira",
+        "title": "IT Systems Administrator",
+        "description": "Thiago is our tech guru who manages our point-of-sale systems, network security, and internal tech infrastructure, guaranteeing that our operations run efficiently and securely every day.",
+        "image": "images/employee3.webp"
+    },
+    {
+        "id": "employee-4",
+        "name": "Fernanda Lima",
+        "title": "Finance Manager",
+        "description": "Fernanda oversees the financial health of our franchise network. She manages budgeting, financial planning, and analyzes performance to ensure sustainable growth and profitability for all our partners.",
+        "image": "images/employee4.webp"
+    },
+    {
+        "id": "employee-5",
+        "name": "Lucas Gonçalves",
+        "title": "Digital Marketing Specialist",
+        "description": "Lucas drives our online presence and customer engagement. He creates and manages our digital advertising campaigns and social media strategies to bring the taste of our açaí to a wider audience.",
+        "image": "images/employee5.webp"
+    }
+]
