@@ -75,5 +75,12 @@
         "ingredients": "Pure, high-grade açaí, topped with organic granola, goji berries, bee pollen, sliced almonds, and a drizzle of organic agave nectar.",
         "price": 17.75,
         "image": "images/acai-premium.webp"
+    },
+    {
+        "id": "fresh_sandwich",
+        "name": "Fresh Sandwich",
+        "ingredients": "Light and healthy sandwich with whole grain bread, turkey, lettuce, bacon, tomato, and avocado.",
+        "price": 15.00,
+        "image": "images/fresh-sandwich.webp"
     }
 ]
