@@ -53,6 +53,7 @@
     grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
     gap: 2.5rem;
     padding-bottom: 4rem;
+    min-height: 100vh;
 }
 
 /* Açaí Card */
