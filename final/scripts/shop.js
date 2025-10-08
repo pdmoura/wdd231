@@ -202,7 +202,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // --- Product Loading and display ---
 
-
+    // Function to create and display product cards with the data fetched
     function displayAcaiProducts(products) {
         if (!acaiGrid) return;
         

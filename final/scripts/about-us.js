@@ -1,4 +1,4 @@
-// 1. Import the function from the module
+// Import the function from the module
 import { fetchData } from './data-fetcher.js';
 
 
@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const teamGrid = document.getElementById('teamGrid');
     const TEAM_DATA_URL = 'data/team.json'; // Defining the data URL
 
-    
+    // Function to create and display team member cards
     function displayTeamMembers(members) {
         if (!teamGrid) return;
         
@@ -30,10 +30,10 @@ document.addEventListener('DOMContentLoaded', () => {
         const teamMembers = await fetchData(TEAM_DATA_URL);
 
         if (teamMembers) {
-            // 3. If data is successfully fetched, display it
+            // If data is successfully fetched, display it
             displayTeamMembers(teamMembers);
         } else {
-            // 4. Otherwise if fetchData returned null (due to an error), show an error message
+            // Otherwise if fetchData returned null (due to an error), show an error message
             if (teamGrid) {
                 teamGrid.innerHTML = '<p style="text-align: center; padding: 2rem;">Failed to load team information. Please try again later.</p>';
             }
