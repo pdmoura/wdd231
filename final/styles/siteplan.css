@@ -39,6 +39,7 @@ h2 {
 main {
     max-width: 1200px;
     margin: 2rem auto;
+    background-color: var(--light);
 }
 
 section {
