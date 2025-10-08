@@ -1,5 +1,9 @@
+// 1. Import the function from the module
+import { fetchData } from './data-fetcher.js';
+
 document.addEventListener('DOMContentLoaded', () => {
     const acaiGrid = document.querySelector('.acai-menu-grid');
+    const PRODUCTS_URL = 'data/acai.json'; // Define the URL for the products data
     const cartIcon = document.getElementById('cartIcon');
     const cartCountSpan = document.getElementById('cart-count');
     const cartModalOverlay = document.getElementById('cartModalOverlay');
@@ -196,23 +200,8 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // --- Product Loading ---
+    // --- Product Loading and display ---
 
-    async function fetchAcaiProducts() {
-        try {
-            const response = await fetch('data/acai.json');
-            if (!response.ok) {
-                throw new Error(`HTTP error! status: ${response.status}`);
-            }
-            acaiProducts = await response.json();
-            displayAcaiProducts(acaiProducts);
-        } catch (error) {
-            console.error('Erro ao carregar produtos de açaí:', error);
-            if (acaiGrid) {
-                acaiGrid.innerHTML = '<p style="text-align: center; padding: 2rem;">Falha ao carregar o menu. Por favor, tente novamente mais tarde.</p>';
-            }
-        }
-    }
 
     function displayAcaiProducts(products) {
         if (!acaiGrid) return;
@@ -248,7 +237,22 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+
+    // Fetch products data from JSON file
+    async function loadProducts() {
+        const products = await fetchData(PRODUCTS_URL);
+
+        if (products) {
+            acaiProducts = products; // Store the products for other functions to use (like addToCart)
+            displayAcaiProducts(acaiProducts);
+        } else {
+            if (acaiGrid) {
+                acaiGrid.innerHTML = '<p style="text-align: center; padding: 2rem;">Failed to load the menu. Please try again later.</p>';
+            }
+        }
+    }
+
     // --- Initialization ---
-    fetchAcaiProducts();
+    loadProducts();
     loadCartFromLocalStorage();
 });

@@ -1,31 +1,20 @@
+// 1. Import the function from the module
+import { fetchData } from './data-fetcher.js';
+
+
 document.addEventListener('DOMContentLoaded', () => {
     const teamGrid = document.getElementById('teamGrid');
+    const TEAM_DATA_URL = 'data/team.json'; // Defining the data URL
 
-    async function fetchTeamData() {
-        try {
-            const response = await fetch('data/team.json');
-            if (!response.ok) {
-                throw new Error(`HTTP error! status: ${response.status}`);
-            }
-            const teamMembers = await response.json();
-            displayTeamMembers(teamMembers);
-        } catch (error) {
-            console.error('Erro ao carregar dados da equipe:', error);
-            if (teamGrid) {
-                teamGrid.innerHTML = '<p style="text-align: center; padding: 2rem;">Falha ao carregar informações da equipe. Por favor, tente novamente mais tarde.</p>';
-            }
-        }
-    }
-
+    
     function displayTeamMembers(members) {
         if (!teamGrid) return;
         
-        teamGrid.innerHTML = '';
+        teamGrid.innerHTML = ''; // Clear existing content
 
         members.forEach(member => {
             const card = document.createElement('div');
             card.classList.add('team-member-card');
-
             card.innerHTML = `
                 <img src="${member.image}" alt="${member.name}" loading="lazy">
                 <h3>${member.name}</h3>
@@ -35,6 +24,21 @@ document.addEventListener('DOMContentLoaded', () => {
             teamGrid.appendChild(card);
         });
     }
+    
+    // Fetch team data from JSON file
+    async function loadTeam() {
+        const teamMembers = await fetchData(TEAM_DATA_URL);
 
-    fetchTeamData();
+        if (teamMembers) {
+            // 3. If data is successfully fetched, display it
+            displayTeamMembers(teamMembers);
+        } else {
+            // 4. Otherwise if fetchData returned null (due to an error), show an error message
+            if (teamGrid) {
+                teamGrid.innerHTML = '<p style="text-align: center; padding: 2rem;">Failed to load team information. Please try again later.</p>';
+            }
+        }
+    }
+
+    loadTeam();
 });
